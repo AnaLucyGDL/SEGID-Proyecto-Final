@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Index</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../main.css'>
+    <script src='main.js'></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Protocolo SSH</h2><br><br>
+        <div class="text-container">
+            <p>Es uno de los protocolos que tenemos para<strong> conectarnos de forma remota a un servidor</strong>. Está disponible para Linux y macOS, además de poder utilizar un cliente en Windows. Básicamente consiste en poder gestionar un servidor de forma remota, pero además hacerlo con seguridad.</p>
+            <p>SSH utiliza un <strong>sistema de autenticación</strong>, lo que va a aportar esa seguridad que mencionamos. Podremos comunicar dos equipos entre sí, de forma remota, y esa comunicación va a estar cifrada. Por ejemplo se utiliza para entrar en un ordenador de forma remota y utilizar para ello un nombre de usuario y contraseña.</p>
+            <p>Funciona de forma similar al protocolo Telnet, pero SSH apareció como una solución cifrada, para mantener la seguridad y evitar problemas. Se basa en el<strong> cifrado de 128 bits</strong>, lo que garantiza una protección fuerte y hace que sea realmente difícil que un intruso pueda descifrar y leer los datos que se envían o reciben. Telnet transfiere los datos en texto plano y eso es un problema.</p><br>
+            <h4>Cómo funciona SSH</h4>
+            <p>Pero, ¿cómo funciona exactamente SSH? Hay que mencionar que necesita tres puntos indispensables: <strong>usuario, puerto y servidor</strong>. Esto es lo que va a permitir establecer una conexión entre servidores y poder hacer todo lo que hemos mencionado.</p>
+            <p>El puerto SSH estándar asignado es el <strong>TCP 22</strong>. No obstante, ese puerto siempre puede ser cambiado si queremos. El cliente SSH va a contactar con el servidor para iniciar la conexión. Ese servidor está escuchando a través del puerto 22 o el que se le haya asignado. Posteriormente el servidor va a enviar la clave pública y comienzan a organizar los parámetros y abrir un canal seguro. El cliente inicia sesión para conectarse a ese servidor.</p>
+            <p>El servidor podría ser por ejemplo un dominio web o una dirección IP. El usuario sería el nombre, como puede ser root o administrador.</p>
+            <p>En cuanto al cifrado SSH, hay de diferentes tipos. Por un lado está el <strong>cifrado simétrico</strong>, que es el más popular, en el que utiliza una clave secreta que va a ser usada tanto al cifrar como al descifrar la conexión. Esa clave es única.</p>
+            <p>Por otra parte está el<strong> cifrado asimétrico</strong>, que en esta ocasión utiliza dos claves diferentes. Una clave es pública y la otra privada y la información solo se puede obtener si se conoce esta última clave.</p>
+            <p>Una última opción de cifrado es lo que se conoce como<strong> hash o hashing</strong>. Esto se consigue al convertir esa información en una serie de datos que son únicos.</p>
+        </div>
+    </div>
+</body>
+</html>

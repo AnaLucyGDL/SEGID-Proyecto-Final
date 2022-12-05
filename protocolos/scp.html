@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Index</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../main.css'>
+    <script src='main.js'></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Protocolo SCP</h2><br><br>
+        <div class="text-container">
+            <p>Secure Copy Protocol (SCP), a menudo denominado simplemente Secure Copy, es un protocolo para sistemas informáticos, que garantiza la transferencia segura de datos entre <strong>un equipo local </strong>(<em>host</em> local) y<strong> un equipo remoto </strong>(<em>host</em> remoto) o, alternativamente, entre <strong>dos equipos remotos</strong>. Se basa en los <strong>comandos RCP</strong>, (<em>remote copy</em>), que se publicaron en 1982 como parte de los “comandos r” de la Universidad de California (Berkeley). Permiten el control de la transmisión de datos a través de la línea de comandos.</p><p>SCP ofrece un<strong> método de autenticación </strong>entre los dos equipos, así como un<strong> cifrado de la transmisión</strong>. Por lo tanto, el protocolo no solo garantiza la seguridad, sino también la autenticidad de los datos transferidos. En ambos mecanismos de seguridad el SCP protocol se basa en SSH (Secure Shell), que también se utiliza en protocolos alternativos de transmisión como FTP (o SFTP). El puerto TCP que utiliza para la <strong>transferencia a través de SCP </strong>es el <strong>puerto estándar SSH 22</strong>.</p><p>Secure Copy es multiplataforma: existen aplicaciones y programas para los sistemas operativos más conocidos, como <strong>Windows</strong>, <strong>macOS</strong> y <strong>Linux</strong>, así como para <strong>Android</strong> y <strong>iOS</strong>.</p><br>
+            <h4>¿Cómo funciona la transmisión con el SCP protocol?</h4>
+            <p>Secure Copy requiere una autenticación de los dos equipos involucrados. Para que se pueda realizar la transmisión a través del protocolo, habrá que establecer, en primer lugar, una conexión SSH desde el equipo local al equipo de destino remoto. Para ello se necesitan, o bien los <strong>datos de acceso SSH </strong>o una <strong>clave autorizada para la autenticación con clave pública</strong>.</p>
+            <p>Una vez que se establece la conexión SSH entre los dos equipos, el cliente SCP inicia un proceso de copia segura en la que están disponibles dos modos diferentes:</p><ul><li><strong>Modo fuente</strong>: una solicitud SCP en modo fuente lee archivos en el sistema de destino y los envía de vuelta al cliente.</li><li><strong>Modo <em>sink</em>:</strong> se utiliza en las solicitudes a través del SCP protocol en páginas de clientes del modo <em>sink</em>, le indica al sistema remoto que se trata de datos entrantes y que deben escribirse en el sistema.</li></ul><p>Los<strong> clientes CPS</strong> suelen utilizar el indicador <strong><em>-f</em></strong>(del inglés <em>from, </em>“de”), con el fin de activar el modo de fuente. Si se inicia el modo <em>sink</em> para enviar datos al equipo de destino, se utilizará en su lugar el indicador <strong><em>-t</em></strong>(del inglés <em>to,</em> “a”).</p>
+        </div>
+    </div>
+</body>
+</html>

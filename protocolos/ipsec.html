@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Index</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../main.css'>
+    <script src='main.js'></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Protocolo IPSEC</h2><br><br>
+        <div class="text-container">
+            <p>IPsec (seguridad del protocolo de Internet) es un marco normalizado para asegurar las comunicaciones de IP mediante el cifrado y autenticación de cada paquete IP en un flujo de datos.</p>
+            <p>La norma IPsec se utiliza normalmente para establecer una VPN IPsec a través de Internet entre terminales fijos y también para crear una conexión cliente-servidor VPN cifrada entre dispositivos remotos y una red fija. Las VPN IPsec han sido sustituidas en gran medida por las VPN SSL, como la VPN SSL FirePass de F5, porque refuerzan la seguridad de los terminales, no requieren ninguna configuración en la máquina remota y aplican la seguridad en la capa de aplicación en lugar de en la capa de red. La seguridad en la capa de aplicación soluciona los típicos fallos de configuración e implementación IPsec, que por diseño refuerza la seguridad en la capa de red y se limita funcionalmente al uso en redes conocidas y controladas.</p>
+            <h4>¿Cómo funciona IPSec?</h4>
+            <p>El protocolo VPN IPSec funciona combinando dos mecanismos fundamentales, AH y ESP, y dos modos de transmisión: el modo túnel y el modo transporte.</p>
+            <p>IPSec combina dos mecanismos fundamentales que se articulan para garantizar la completa privacidad de la información enviada. Estos mecanismos son la cabecera de autentificación (AH) y la capa de seguridad encapsulada (ESP). Veamos en qué consisten.</p>
+            <h4>Cabecera de autentificación (AH)</h4>
+            <p>La función de la cabecera de autentificación de IPSec, más conocida simplemente como AH, consiste en la incorporación de una firma digital en cada paquete de datos enviado. La AH permite verificar que solo el destinatario de los datos pueda recibirlos, y a su vez impide que los datos sean modificados antes de llegar a su destino, evitando, por ejemplo, los ataques de intermediario.</p>
+            <h4>Capa de seguridad encapsulada (ESP)</h4>
+            <p>Complementaria a la AH, la capa de seguridad encapsulada –ESP– tiene la función de asegurar la encriptación de la información que se encuentra dentro del paquete, de forma que impide que los datos enviados sean accesibles por parte de terceros que puedan interceptar una transmisión. Utiliza tres partes fundamentales para operar: un encabezado ESP, un tráiler y un bloque de verificación.</p>
+            <h4>Modos de IPSec: túnel y transporte</h4>
+            <p>La combinación de los mecanismos de la AH y la ESP permite a IPSec contar con dos modos principales de uso: el modo túnel y el modo transporte. Vamos a ver en qué consiste cada uno.</p>
+            <h4>Modo túnel</h4><p>El modo túnel de IPSec es su modo por defecto. Cuando este modo está activado, IPSec crea un túnel VPN para intercambiar información de forma segura con el servidor. Este túnel queda encriptado por IPSec, y la dirección IP queda enmascarada para terminar de proteger los datos enviados y recibidos.</p>
+            <p>En el modo túnel se introduce un encabezado IPSec (AH o ESP) entre el encabezado IP y la capa superior del protocolo.</p>
+            <h4>Modo de transporte</h4>
+            <p>El modo de transporte de IPSec se utiliza para comunicaciones de extremo a extremo, por ejemplo entre un cliente y un servidor. Este tipo de encriptación se puede utilizar para realizar sesiones de escritorio remoto. Emplea un encabezado TCP/UDP a través de un encabezado AH o ESP.</p>
+            <p>Suele utilizarse cuando se emplea otro protocolo de tunelización para encapsular el paquete de datos IP, que a su vez queda protegido por el protocolo IPSec.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.text-container{
+    margin-left: 3%;
+    margin-top: 5%;
+}
+
+hr {
+    color: #000000;
+    width: 60%;
+    height: 50%;
+}

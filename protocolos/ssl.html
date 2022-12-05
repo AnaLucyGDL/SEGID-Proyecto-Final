@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Index</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../main.css'>
+    <script src='main.js'></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Protocolo SSL</h2><br><br>
+        <div class="text-container">
+            <p>En el protocolo SSL se utiliza tanto criptografía asimétrica como simétrica. La primera se utiliza para realizar el intercambio de las claves, que a su vez serán usadas para cifrar la comunicación mediante un algoritmo simétrico.</p>
+            <p>En el caso de los sitios web, para el funcionamiento de este protocolo, lo que se necesita utilizar es un certificado SSL. El servidor web tendrá instalado uno y cuando un cliente intente acceder a él, le remitirá el mismo con la clave pública del servidor, para enviar de esta forma la clave que se usará para realizar la conexión de manera segura mediante un cifrado simétrico.</p>
+            <ul>
+                <li>Un usuario realiza una petición HTTP segura a través de un navegador a un sitio web (HTTPS://www.redalia.es/)</li>
+                <li><img src="https://cdn.inicium.com/images/redalia/docs/protocolo-ssl/peticion_segura.png" alt="Petición HTTPS" title="Petición HTTPS"></li>
+                <li>El servidor donde está alojado el sitio web, envía (si lo tiene) el certificado que incluye la clave pública del servidor. En caso de no tener certificado SSL, se producirá un error.</li>
+                <li><img src="https://cdn.inicium.com/images/redalia/docs/protocolo-ssl/respuesta_certificado.png" alt="Servidor responde con Certificado SSL" title="Servidor responde con Certificado SSL"></li>
+                <li>El navegador comprueba que la <a class="info" href="https://www.redalia.es/ssl/certificado-ssl/">entidad emisora del certificado o CA</a> sea de confianza. En caso contrario, pedirá al usuario que acepte el certificado bajo su responsabilidad.</li>
+                <li>Llegados a este punto, el navegador generará una clave simétrica, que será cifrada mediante la clave pública del servidor para ser enviada de manera segura al mismo.</li>
+                <li><img src="https://cdn.inicium.com/images/redalia/docs/protocolo-ssl/envio_clave.png" alt="Envío clave para conexión HTTPS" title="Envío clave para conexión HTTPS"></li>
+                <li>De esta forma, la comunicación ya se ha establecido de manera segura, y será cifrada en ambos sentidos mediante la clave generada en el punto anterior.</li>
+                <li><img src="https://cdn.inicium.com/images/redalia/docs/protocolo-ssl/conexion_segura.png" alt="Conexión HTTPS establecida" title="Conexión HTTPS establecida"></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

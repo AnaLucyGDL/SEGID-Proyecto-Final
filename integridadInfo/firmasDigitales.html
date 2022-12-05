@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Index</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../main.css'>
+    <script src='main.js'></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Firmas Digitales</h2><br><br>
+        <div class="text-container">
+            <p>Una firma digital es un mecanismo criptográfico empleado para verificar la autenticidad e integridad de datos digitales. Podemos considerarla una versión digital de las firmas escritas a mano ordinarias, pero con un nivel más elevado de complejidad y seguridad.</p><p>En términos sencillos, podríamos describir una firma digital como código vinculado a un mensaje o documento. Después de ser generado, dicho código ejerce como prueba de que el mensaje no ha sido manipulado durante el proceso que lo lleva del emisor al receptor.</p><div>A pesar de que el concepto de proteger las comunicaciones mediante el uso de criptografía&nbsp;se remonta a la antigüedad, los esquemas de firma digital se convirtieron en una posibilidad real en los años 70 -gracias al desarrollo de la&nbsp; Criptografía de Clave Pública (PKC). Así que, para aprender cómo funcionan las firmas digitales, necesitamos comprender primero los fundamentos de las funciones hash y de la criptografía de clave pública.</div>
+            <br>
+            <h4>Funciones Hash</h4><div>El&nbsp;hashing es uno de los elementos principales de los sistemas de firma digital. El proceso de hashing implica transformar datos de cualquier tamaño en un output de extensión fija. Esto se consigue mediante un tipo de algoritmos especiales conocidos como funciones hash. El output generado por una función hash se denomina valor hash o digest del mensaje.</div>
+            <div>En combinación con la&nbsp;criptografía, las así llamadas funciones hash criptográficas pueden ser empleadas para generar un valor hash (digest) que funciona como huella digital única. Esto significa que cualquier cambio en los datos de entrada (mensaje) generará como resultado un output (valor hash) completamente diferente. Y esta es la razón por la que las funciones hash criptográficas son ampliamente utilizadas para verificar la autenticidad de los datos digitales.</div>
+            <br><h4>Criptografía de Clave Pública (PKC)</h4><p>La criptografía de clave pública, o PKC, designa el sistema criptográfico que hace uso de un par de claves: una pública y otra privada. Las dos claves están matemáticamente vinculadas y pueden ser empleadas tanto para encriptación de datos como para firmas digitales.</p>
+            <div>Como herramienta de encriptación, la PKC es más segura que los métodos más rudimentarios de la&nbsp;encriptación simétrica. Mientras los sistemas más antiguos se apoyan en la misma clave para cifrar y descifrar la información, la PKC permite&nbsp;encriptar los datos mediante la clave pública, y desencriptarlos utilizando la correspondiente clave privada.</div>
+            <p>Aparte de eso, el esquema PKC puede ser aplicado para la generación de firmas digitales. Básicamente, el proceso consiste en someter a hashing un mensaje (o datos digitales) junto con la clave privada del firmante. A continuación, el receptor del mensaje podrá comprobar si la firma es válida utilizando la clave pública proporcionada por el firmante.</p>
+            <div>En algunas circunstancias, las firmas digitales pueden conllevar encriptación, aunque no siempre es el caso. Por ejemplo, la blockchain de&nbsp;Bitcoin hace uso de la PKC y de las firmas digitales, pero a diferencia de lo que muchos tienden a creer, no se produce encriptación en el proceso. Técnicamente, Bitcoin utiliza el llamado Algoritmo de Firma Digital de Curva Elíptica (ECDSA) para autenticar las transacciones.</div>
+            <br><h4>Funcionamiento de las firmas digitales</h4>
+            <p>En el ámbito de las criptomonedas, un sistema de firma digital con frecuencia consta de tres pasos básicos: hashing, firma y verificación.</p>
+            <h4>Hashing de los datos</h4>
+            <div>El primer paso es someter a proceso de hashing el mensaje o los datos digitales. Esto se logra procesando los datos mediante un algoritmo de&nbsp;hashing, para así obtener un valor hash (en este caso, el digest del mensaje). Como ya se ha mencionado, el tamaño de los mensajes puede variar de forma significativa, pero cuando son sometidos a proceso de hashing, todos sus valores hash resultantes presentan la misma longitud. Esta es la propiedad más elemental de una función hash.</div>
+            <p>Sin embargo, para producir una firma digital no es imprescindible someter los datos a hashing, porque uno puede utilizar una clave privada para firmar un mensaje que de ninguna forma haya sido hasheado. Ahora bien, en el caso de las criptomonedas, los datos son siempre sometidos a proceso de hashing porque lidiar con digests de extensión fija facilita todo el proceso.</p>
+            <h4>Firma</h4>
+            <p>Tras someter a proceso de hashing la información, el emisor del mensaje debe firmarla. Este es el momento en que la criptografía de clave pública entra en acción. Existen diversos tipos de algoritmos de firma digital, cada uno con su propio mecanismo particular. Pero de forma general, el mensaje que ha sido sometido a hashing será firmado con una clave privada, y el receptor del mismo podrá comprobar su validez utilizando la correspondiente clave pública (proporcionada por el firmante).</p>
+            <p>Dicho de otra forma, si la clave privada no se incluye cuando se genera la firma, el receptor del mensaje no podrá utilizar la clave pública correspondiente para así verificar su validez. Tanto la clave pública como la privada son generadas por el emisor del mensaje, pero sólo la clave pública es compartida con el receptor.</p>
+            <p>Vale la pena señalar que las firmas digitales están directamente relacionadas con el contenido de cada mensaje. Entonces, a diferencia de las firmas manuscritas, que tienden a ser las mismas independientemente del mensaje, cada mensaje firmado digitalmente tendrá una firma digital diferente.</p>
+        </div>
+    </div>
+</body>
+</html>
